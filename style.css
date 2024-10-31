@@ -4,3 +4,92 @@
     box-sizing: border-box;
     font-family: Arial normal;
 }
+
+body {
+    background-color: blueviolet;
+    color: white;
+    margin-top: 128px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centraliza os elementos no formulário */
+    gap: 10px; /* Adiciona espaço entre o input e os botões */
+}
+
+ul {
+    text-align: center;
+    margin-top: 16px;
+}
+
+ul#lista-tarefas li {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+#lista-tarefas {
+    list-style: none; /* Remove as marcas de lista */
+    padding: 0; /* Remove o padding padrão da lista */
+}
+
+#lista-tarefas li {
+    padding: 8px 0; /* Espaçamento vertical entre os itens */
+    width: 60%; /* Define a largura do item da lista */
+    margin: 0 auto; /* Centraliza o item da lista */
+}
+
+#lista-tarefas li:not(:last-child) { /* Adicona a linha inferior apenas nos itens que não são o último */
+    border-bottom: 1px solid #ccc; /* Linha abaixo de cada item exceto do último */
+}
+
+#lista-tarefas span {
+    cursor: pointer; /* Muda o cursor para pointer ao passar o mouse */
+}
+
+#lista-tarefas span.completo {
+    text-decoration: line-through; /* Risco no texto quando completo */
+}
+
+#lista-tarefas span:hover {
+    text-decoration: underline; /* Adiciona uma linha embaixo do texto ao passar o mouse */
+}
+
+input {
+    height: 30px;
+    width: 300px;
+    font-size: 20px;
+}
+
+button:hover{
+    background-color: green;
+    transform: scale(1.05);
+}
+
+button {
+    background-color: rgb(4, 161, 4);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    width: 120px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+#apagar-lista:hover {
+    background-color: blue;
+}
+
+#apagar-lista {
+    background-color: rgb(9, 66, 255);
+}
+
+.completo { /* Cria a classe 'completo' que risca o texto ou tira o risco quando clicado */
+    text-decoration: line-through;
+}
