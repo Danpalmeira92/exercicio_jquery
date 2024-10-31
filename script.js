@@ -11,6 +11,7 @@ $('form').on('submit', function(e) {
         const novaTarefa = $('<li></li>').append($('<span></span>').text(adicionarTarefa)).hide() 
     novaTarefa.appendTo('#lista-tarefas').fadeIn(1000) //Adicona à lista e exibe com animação
     $('#nova-tarefa').val('') //Limpa o campo de entrada
+    $('#nova-tarefa').focus() //Retoa o foco no input após limpar
 
     novaTarefa.find('span').on('click', function(e) { //Adiciona a classe 'completo' apenas ao clicar no texto
         e.stopPropagation() //Impede que o click se propaque ao li
